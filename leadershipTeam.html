@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Safety UAE - Contact</title>
+    <title>AI Safety UAE - Leadership team</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -11,7 +11,7 @@
     />
     <style>
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         background-color: #f8fafc;
         color: #1f2937;
       }
@@ -32,23 +32,27 @@
         <a
           href="index.html"
           class="text-lg font-medium transition-colors duration-300 ease-in-out text-gray-600 hover:text-gray-900"
-          >Home</a
         >
+          Home
+        </a>
         <a
           href="about.html"
-          class="text-lg font-medium transition-colors duration-300 ease-in-out text-gray-600 hover:text-gray-900"
-          >About</a
+          class="text-lg font-medium transition-colors duration-300 ease-in-out"
         >
+          About
+        </a>
         <a
           href="events.html"
           class="text-lg font-medium transition-colors duration-300 ease-in-out text-gray-600 hover:text-gray-900"
-          >Events</a
         >
+          Events
+        </a>
         <a
           href="contact.html"
-          class="text-lg font-medium transition-colors duration-300 ease-in-out font-semibold"
-          >Contact</a
+          class="text-lg font-medium transition-colors duration-300 ease-in-out text-gray-600 hover:text-gray-900"
         >
+          Contact
+        </a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyk7iTZeUXYixHCrkbJ5c6oybmYs-XseIlJTNyCzt77PXCXA/viewform" target="_blank">
           <button
             class="hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300"
@@ -61,57 +65,64 @@
     </header>
 
     <main>
-      <section class="p-8 sm:p-16 min-h-screen">
-        <div class="max-w-4xl mx-auto text-gray-900">
-          <h1 class="text-4xl sm:text-5xl font-bold mb-6">Get in touch</h1>
-          <p class="text-lg text-gray-600 mb-8">
-            Have a question or want to get involved? Fill out the form below or
-            reach out to us on our social channels.
-          </p>
-          <form class="space-y-6">
-            <div>
-              <label
-                for="name"
-                class="block text-sm font-medium text-gray-700 mb-2"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full p-3 bg-white rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label
-                for="email"
-                class="block text-sm font-medium text-gray-700 mb-2"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full p-3 bg-white rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label
-                for="message"
-                class="block text-sm font-medium text-gray-700 mb-2"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                rows="5"
-                class="w-full p-3 bg-white rounded-lg text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+      <!-- Hero Section -->
+      <section
+        class="relative h-[40vh] flex items-end justify-center text-center p-8 text-white"
+        style="
+          background-image: url('images/about-bg.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-4">Leadership team</h1>
+        </div>
+      </section>
+
+      <section class="py-16 bg-gray-50 px-8 sm:px-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-gray-900 mb-16">Meet Our Team</h2>
+          <!-- Team Grid -->
+          <div class="grid grdi-cols-1 sm:grid-cols-2 gap-4 justify-center">
+            <!-- Team Member 1 -->
+            <div
+              class="bg-white rounded-2xl shadow-2xl p-10 hover:shadow-3xl transition transform hover:-translate-y-2 w-full max-w-sm"
             >
-              Send Message
-            </button>
-          </form>
+              <img
+                src="./images/Wes.png"
+                alt="Wes Ezzeddine"
+                class="w-56 h-56 mx-auto rounded-full object-cover mb-6"
+              />
+              <h3 class="text-3xl font-semibold mb-2"> 
+                <!-- text-[#D3B48C] -->
+                Wes Ezzeddine
+              </h3>
+              <p class="text-gray-700 text-lg">
+                AI safety specialist and fintech leader with 15+ years in tech,
+                focused on AI alignment, governance, and resilient systems.
+              </p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div
+              class="bg-white rounded-2xl shadow-2xl p-10 hover:shadow-3xl transition transform hover:-translate-y-2 w-full max-w-sm"
+            >
+              <img
+                src="./images/Nai.png"
+                alt="Naiyarah Hussain"
+                class="w-56 h-56 mx-auto rounded-full object-cover mb-6"
+              />
+              <h3 class="text-3xl font-semibold mb-2">
+                Naiyarah Hussain
+              </h3>
+              <p class="text-gray-700 text-lg">
+                Senior engineer in AI safety and reliability with leadership
+                roles at IBM, Lightning AI, and SurrealDB, and contributor to
+                global multilingual AI datasets.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -149,7 +160,9 @@
                 <a href="index.html" class="hover:text-white">Projects</a>
               </li>
               <li>
-                <a href="Codeofconduct.html" class="hover:text-white">Code Of Conduct</a>
+                <a href="Codeofconduct.html" class="hover:text-white">
+                  Code Of Conduct
+                </a>
               </li>
               <li>
                 <a href="index.html" class="hover:text-white">Resources</a>
@@ -159,16 +172,31 @@
                   href="https://luma.com/ai-safety-uae"
                   target="_blank"
                   class="hover:text-white"
-                  >Events</a
                 >
+                  Events
+                </a>
               </li>
             </ul>
           </div>
           <div>
             <h4 class="text-white font-semibold mb-2">Social</h4>
             <ul class="space-y-1 text-sm">
-              <li><a href="https://www.linkedin.com/groups/11862005/" class="hover:text-white">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com/aisafetyuae?igsh=cWFqOThpMm53ODdh" class="hover:text-white">Instagram</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/groups/11862005/"
+                  class="hover:text-white"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/aisafetyuae?igsh=cWFqOThpMm53ODdh"
+                  class="hover:text-white"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
