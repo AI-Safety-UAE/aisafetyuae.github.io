@@ -15,8 +15,105 @@
         background-color: #f8fafc;
         color: #1f2937;
       }
+
+      .wrapper {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 40px;
+        /* padding: 60px 40px; */
+      }
+
+      .left-title {
+        font-size: 32px;
+        color: #0b6a7a;
+        /* padding-top: 40px; */
+      }
+
+      .right {
+        border-left: 1px solid #cfcfcf;
+        padding-left: 40px;
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+
+      .section p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .members {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 40px;
+        margin-top: 20px;
+      }
+
+      .member {
+        display: flex;
+        gap: 12px;
+        padding: 12px 0;
+        border-top: 1px solid #ddd;
+      }
+
+      .member img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .member-name {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .member-desc {
+        font-size: 14px;
+        color: #444;
+      }
+
+      /* Tablet */
+      @media (max-width: 900px) {
+        .wrapper {
+          grid-template-columns: 200px 1fr;
+        }
+        /* 
+        .left-title {
+          font-size: 26px;
+        } */
+      }
+
+      /* Mobile */
+      @media (max-width: 700px) {
+        .wrapper {
+          grid-template-columns: 1fr;
+        }
+
+        .right {
+          border-left: none;
+          padding-left: 0;
+        }
+
+        .left-title {
+          margin-bottom: 30px;
+        }
+
+        .members {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
+
   <body class="bg-gray-50 text-gray-800">
     <header
       class="sticky top-0 z-50 bg-white/50 backdrop-blur-md p-4 flex justify-between items-center border-b border-gray-200"
@@ -53,7 +150,10 @@
         >
           Contact
         </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyk7iTZeUXYixHCrkbJ5c6oybmYs-XseIlJTNyCzt77PXCXA/viewform" target="_blank">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeyk7iTZeUXYixHCrkbJ5c6oybmYs-XseIlJTNyCzt77PXCXA/viewform"
+          target="_blank"
+        >
           <button
             class="hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300"
             style="background-color: #9e2e2e;"
@@ -81,46 +181,155 @@
       </section>
 
       <section class="py-16 bg-gray-50 px-8 sm:px-16">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-4xl font-bold text-gray-900 mb-16">Meet Our Team</h2>
-          <!-- Team Grid -->
-          <div class="grid grdi-cols-1 sm:grid-cols-2 gap-4 justify-center">
-            <!-- Team Member 1 -->
-            <div
-              class="bg-white rounded-2xl shadow-2xl p-10 hover:shadow-3xl transition transform hover:-translate-y-2 w-full max-w-sm"
-            >
-              <img
-                src="./images/Wes.png"
-                alt="Wes Ezzeddine"
-                class="w-56 h-56 mx-auto rounded-full object-cover mb-6"
-              />
-              <h3 class="text-3xl font-semibold mb-2"> 
-                <!-- text-[#D3B48C] -->
-                Wes Ezzeddine
-              </h3>
-              <p class="text-gray-700 text-lg">
-                AI safety specialist and fintech leader with 15+ years in tech,
-                focused on AI alignment, governance, and resilient systems.
-              </p>
+        <div class="wrapper">
+          <div class="left-title">
+            Leadership
+          </div>
+
+          <div class="right">
+            <!-- Co-founders -->
+            <div class="section">
+              <h2>Co-founders</h2>
+              <p>The co-founders are:</p>
+              <div class="members">
+                <div class="member">
+                  <img src="images/Wes.png" />
+                  <div>
+                    <div class="member-name">Wes Ezzeddine</div>
+                    <div class="member-desc">
+                      AI safety specialist and fintech leader with 15+ years in
+                      tech, focused on AI alignment, governance, and resilient
+                      systems.
+                    </div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Nai.png" />
+                  <div>
+                    <div class="member-name">Naiyarah Hussain</div>
+                    <div class="member-desc">
+                      Senior engineer in AI safety and reliability with
+                      leadership roles at IBM, Lightning AI, and SurrealDB, and
+                      contributor to global multilingual AI datasets.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Team Member 2 -->
-            <div
-              class="bg-white rounded-2xl shadow-2xl p-10 hover:shadow-3xl transition transform hover:-translate-y-2 w-full max-w-sm"
-            >
-              <img
-                src="./images/Nai.png"
-                alt="Naiyarah Hussain"
-                class="w-56 h-56 mx-auto rounded-full object-cover mb-6"
-              />
-              <h3 class="text-3xl font-semibold mb-2">
-                Naiyarah Hussain
-              </h3>
-              <p class="text-gray-700 text-lg">
-                Senior engineer in AI safety and reliability with leadership
-                roles at IBM, Lightning AI, and SurrealDB, and contributor to
-                global multilingual AI datasets.
+            <!-- Advisors -->
+            <div class="section">
+              <h2>Advisors</h2>
+              <p>
+                The Advisors are:
               </p>
+
+              <div class="members">
+                <div class="member">
+                  <img src="images/Grace.png" />
+                  <div>
+                    <div class="member-name">Grace S. Thomson</div>
+                    <div class="member-desc">
+                      Advisor in AI Policy and Strategy with experience across
+                      the Middle East, Latin America, Europe, and the USA.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member">
+                  <img src="images/Yasser.png" />
+                  <div>
+                    <div class="member-name">Mohamed Yasser</div>
+                    <div class="member-desc">
+                      A Software Solutions Architect with a distinguished career
+                      spanning over a 19 years, renowned for designing and
+                      developing advanced software solutions for prestigious
+                      government organizations.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Working Groups -->
+            <div class="section">
+              <h2>Working Group Leaders</h2>
+              <p>
+                The working groups are led by the following:
+              </p>
+
+              <div class="members">
+                <div class="member">
+                  <img src="images/Wes.png" />
+                  <div>
+                    <div class="member-name">Literacy</div>
+                    <div class="member-desc">
+                      Wes Ezzeddine
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member">
+                  <img src="images/Nai.png" />
+                  <div>
+                    <div class="member-name">Convening & Coordination</div>
+                    <div class="member-desc">
+                      Naiyarah Hussain
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member">
+                  <img src="images/Nikitha.png" />
+                  <div>
+                    <div class="member-name">Governance & Regulation</div>
+                    <div class="member-desc">
+                      Nikitha Ann Mathew
+                    </div>
+                  </div>
+                </div>
+
+                <div class="member">
+                  <img src="images/Omar.png" />
+                  <div>
+                    <div class="member-name">Technology & Security</div>
+                    <div class="member-desc">
+                      Omar Abdullah
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Volunteers -->
+            <div class="section">
+              <h2>Volunteers</h2>
+              <p>
+                The Volunteers are:
+              </p>
+
+              <div class="members">
+                <div class="member">
+                  <img src="images/Fatma.png" />
+                  <div>
+                    <div class="member-name">
+                      Fatma Eagl
+                    </div>
+                    <!-- <div class="member-desc">
+                      Volunteer details
+                    </div> -->
+                  </div>
+                </div>
+
+                <div class="member">
+                  <img src="images/Yusra.png" />
+                  <div>
+                    <div class="member-name">Yusra Khan</div>
+                    <!-- <div class="member-desc">
+                      Volunteer details
+                    </div> -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
