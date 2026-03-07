@@ -107,7 +107,6 @@ body {
 #langMenu * {
   -webkit-user-modify: read-only !important;
   -moz-user-modify: read-only !important;
-  user-modify: read-only !important;
 }
 
 /* Prevent any text transformation */
@@ -236,12 +235,4 @@ body.visible {
   visibility: visible;
 }
 
-/* Temporary test styles */
-header nav a.test-highlight {
-  background-color: yellow !important;
-  border: 3px solid red !important;
-}
 
-header nav a {
-  transition: none !important; /* Disable transitions for testing */
-}
