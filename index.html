@@ -34,8 +34,9 @@
     <!-- ✅ Main css -->
     <link href="/css/main.css" rel="stylesheet" />
     <!-- Add translation -->
+    <script src="translations/ar/ar.js" defer></script>
+    <script src="translations/en/en.js" defer></script>
     <script src="js/translation.js" defer></script>
-    <meta name="google" content="notranslate" />
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- header was here -->
@@ -56,16 +57,19 @@
         >
           <h1
             class="text-4xl sm:text-6xl md:text-6xl font-bold tracking-tight mb-6 text-white leading-[1.5] sm:leading-[1.6] px-4"
+            data-i18n="index.hero.h1"
           >
             Advancing AI Safety Together
           </h1>
-          <h2
+          <!-- <h2
             class="text-3xl sm:text-4xl md:text-4xl font-semibold tracking-tight mb-6 text-white leading-[1.5] px-4"
+            data-i18n="index.hero.h2"
           >
             AI governance & AI safety training for the UAE
-          </h2>
+          </h2> -->
           <p
             class="text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl leading-relaxed px-4"
+            data-i18n="index.hero.p"
           >
             Join our community to explore AI safety , and access enterprise
             training, model auditing, and AI governance services built for
@@ -80,15 +84,30 @@
           class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
           <!-- Feature Item -->
-          <div
-            class="p-8 hover:bg-gradient-to-b hover:from-white hover:to-[#E5E7EB] rounded-lg transition-all duration-500"
+          <a
+            href="https://github.com/AI-Safety-UAE/resources/blob/main/README.md"
+            target="_blank"
           >
-            <div class="mb-4 text-3xl">
-              <i class="fa-solid fa-graduation-cap" style="color: #9e2e2e;"></i>
+            <div
+              class="p-8 hover:bg-gradient-to-b hover:from-white hover:to-[#E5E7EB] rounded-lg transition-all duration-500"
+            >
+              <div class="mb-4 text-3xl">
+                <i
+                  class="fa-solid fa-graduation-cap"
+                  style="color: #9e2e2e;"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-semibold mb-2"
+                data-i18n="index.feat.learn.title"
+              >
+                Learn
+              </h3>
+              <p class="text-gray-600" data-i18n="index.feat.learn.desc">
+                Access curated AI safety resources.
+              </p>
             </div>
-            <h3 class="text-lg font-semibold mb-2">Learn</h3>
-            <p class="text-gray-600">Access curated AI safety resources.</p>
-          </div>
+          </a>
 
           <!-- Feature Item -->
           <a
@@ -101,8 +120,15 @@
               <div class="mb-4 text-3xl">
                 <i class="fa-solid fa-link" style="color: #9e2e2e;"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2">Connect</h3>
-              <p class="text-gray-600">Join our AI Safety UAE.</p>
+              <h3
+                class="text-lg font-semibold mb-2"
+                data-i18n="index.feat.connect.title"
+              >
+                Connect
+              </h3>
+              <p class="text-gray-600" data-i18n="index.feat.connect.desc">
+                Join our AI Safety UAE.
+              </p>
             </div>
           </a>
 
@@ -113,8 +139,13 @@
             <div class="mb-4 text-3xl">
               <i class="fa-solid fa-landmark-dome" style="color: #9e2e2e;"></i>
             </div>
-            <h3 class="text-lg font-semibold mb-2">Build</h3>
-            <p class="text-gray-600">
+            <h3
+              class="text-lg font-semibold mb-2"
+              data-i18n="index.feat.build.title"
+            >
+              Build
+            </h3>
+            <p class="text-gray-600" data-i18n="index.feat.build.desc">
               Contribute to community-driven AI projects.
             </p>
           </div>
@@ -127,8 +158,15 @@
               <div class="mb-4 text-3xl">
                 <i class="fa-regular fa-calendar" style="color: #9e2e2e;"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2">Events</h3>
-              <p class="text-gray-600">Explore upcoming AI safety meetups.</p>
+              <h3
+                class="text-lg font-semibold mb-2"
+                data-i18n="index.feat.events.title"
+              >
+                Events
+              </h3>
+              <p class="text-gray-600" data-i18n="index.feat.events.desc">
+                Explore upcoming AI safety meetups.
+              </p>
             </div>
           </a>
 
@@ -158,8 +196,13 @@
                 style="color: #9e2e2e;"
               ></i>
             </div>
-            <h3 class="text-lg font-semibold mb-2">Projects</h3>
-            <p class="text-gray-600">
+            <h3
+              class="text-lg font-semibold mb-2"
+              data-i18n="index.feat.projects.title"
+            >
+              Projects
+            </h3>
+            <p class="text-gray-600" data-i18n="index.feat.projects.desc">
               Discover community AI safety projects.
             </p>
           </div>
@@ -171,32 +214,42 @@
             <div class="mb-4 text-3xl">
               <i class="fa-solid fa-circle-info" style="color: #9e2e2e;"></i>
             </div>
-            <h3 class="text-lg font-semibold mb-2">Support</h3>
-            <p class="text-gray-600">Get help and contribute back.</p>
+            <h3
+              class="text-lg font-semibold mb-2"
+              data-i18n="index.feat.support.title"
+            >
+              Support
+            </h3>
+            <p class="text-gray-600" data-i18n="index.feat.support.desc">
+              Get help and contribute back.
+            </p>
           </div>
 
           <!-- Feature Item -->
-          <a href="leadershipTeam.html">
+          <!-- <a href="leadershipTeam.html">
             <div
               class="p-8 hover:bg-gradient-to-b hover:from-white hover:to-[#E5E7EB] rounded-lg transition-all duration-500"
             >
               <div class="mb-4 text-3xl">
                 <i class="fa-solid fa-people-group" style="color: #9e2e2e;"></i>
               </div>
-              <h3 class="text-lg font-semibold mb-2">Team</h3>
-              <p class="text-gray-600">Meet our community leaders.</p>
+              <h3 class="text-lg font-semibold mb-2" data-i18n="index.feat.team.title">Team</h3>
+              <p class="text-gray-600" data-i18n="index.feat.team.desc">Meet our community leaders.</p>
             </div>
-          </a>
+          </a> -->
         </div>
       </section>
 
       <!-- Services Section -->
       <section class="p-8 sm:p-16 animate-on-scroll">
         <div class="max-w-6xl mx-auto text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
+            data-i18n="index.services.title"
+          >
             Enterprise AI Safety Services
           </h2>
-          <p class="text-gray-700 mb-8">
+          <p class="text-gray-700 mb-8" data-i18n="index.services.desc">
             AI Safety UAE delivers hands-on training, technical model audits,
             and governance frameworks to help organisations in the UAE adopt AI
             responsibly and meet emerging regulatory requirements.
@@ -212,12 +265,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.s1.title"
+                      >
                         Foundational AI Safety Training
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.s1.desc"
+                  >
                     A 2-hour live session equipping teams with AI safety
                     literacy, ethics awareness, and governance responsibility,
                     designed for non-technical and mixed audiences.
@@ -226,6 +285,7 @@
                     href="services.html#training"
                     class="mt-5 inline-block"
                     style="color: #9e2e2e;"
+                    data-i18n="index.s1.link"
                   >
                     Learn more →
                   </a>
@@ -236,12 +296,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.s2.title"
+                      >
                         Advanced AI Safety Programme
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.s2.desc"
+                  >
                     Intensive 1-week or 4-week courses covering AI alignment,
                     societal risk, ISO 42001 compliance, and technical safety
                     for developers and GRC professionals.
@@ -250,6 +316,7 @@
                     href="services.html#advanced"
                     class="mt-5 inline-block"
                     style="color: #9e2e2e;"
+                    data-i18n="index.s2.link"
                   >
                     Learn more →
                   </a>
@@ -260,12 +327,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.s3.title"
+                      >
                         LLM & Vision Model Audits
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.s3.desc"
+                  >
                     7,500+ adversarial attack simulations including jailbreak
                     testing, hallucination analysis, data leakage detection, and
                     prompt injection testing. Delivered with a full mitigation
@@ -275,6 +348,7 @@
                     href="services.html#audit"
                     class="mt-5 inline-block"
                     style="color: #9e2e2e;"
+                    data-i18n="index.s3.link"
                   >
                     Learn more →
                   </a>
@@ -285,12 +359,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.s4.title"
+                      >
                         AI Risk & Governance Framework
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.s4.desc"
+                  >
                     Enterprise AI risk assessment, regulatory alignment,
                     use-case classification, and governance workflow design ,
                     delivering a board-ready risk report and policy
@@ -300,6 +380,7 @@
                     href="services.html#governance"
                     class="mt-5 inline-block"
                     style="color: #9e2e2e;"
+                    data-i18n="index.s4.link"
                   >
                     Learn more →
                   </a>
@@ -313,7 +394,10 @@
       <!-- Core Initiatives Section -->
       <section class="p-8 sm:p-16 animate-on-scroll">
         <div class="max-w-6xl mx-auto text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8"
+            data-i18n="index.initiatives.title"
+          >
             Core Initiatives
           </h2>
           <div class="space-y-6 text-left">
@@ -326,12 +410,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.init.meetups.title"
+                      >
                         Meetups & Workshops
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.init.meetups.desc"
+                  >
                     Regional forums connecting global AI safety thinking with
                     UAE stakeholders.
                   </p>
@@ -342,12 +432,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.init.stakeholder.title"
+                      >
                         Stakeholder Engagement
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.init.stakeholder.desc"
+                  >
                     Roundtables with government, regulators, and industry to
                     shape national AI policy.
                   </p>
@@ -358,12 +454,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.init.study.title"
+                      >
                         Study Groups
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.init.study.desc"
+                  >
                     Deep dives into AI governance, safety alignment, societal
                     implications, and ethical deployment.
                   </p>
@@ -374,12 +476,18 @@
                 >
                   <div class="flex items-center mb-4">
                     <div>
-                      <h4 class="text-lg font-semibold text-gray-900">
+                      <h4
+                        class="text-lg font-semibold text-gray-900"
+                        data-i18n="index.init.hackathons.title"
+                      >
                         Hackathons & Technical Challenges
                       </h4>
                     </div>
                   </div>
-                  <p class="text-gray-700 leading-relaxed">
+                  <p
+                    class="text-gray-700 leading-relaxed"
+                    data-i18n="index.init.hackathons.desc"
+                  >
                     Building safety tools and scalable mitigations for
                     real-world use.
                   </p>
@@ -393,7 +501,10 @@
       <!-- Active Working Groups Section -->
       <section class="p-8 sm:p-16 animate-on-scroll">
         <div class="max-w-6xl mx-auto text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8"
+            data-i18n="index.wg.title"
+          >
             Active Working Groups
           </h2>
           <div class="space-y-6 text-left">
@@ -409,14 +520,21 @@
                       <i class="fa-solid fa-book" style="color: #9e2e2e;"></i>
                     </span>
                   </div>
-                  <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 mb-4"
+                    data-i18n="index.wg.literacy.title"
+                  >
                     Literacy
                   </h4>
                   <ul class="space-y-2 text-gray-700 leading-relaxed">
-                    <li>Study groups</li>
-                    <li>Certifications</li>
-                    <li>Industry knowledge sharing</li>
-                    <li>Expert advice on AI policy &amp; products</li>
+                    <li data-i18n="index.wg.literacy.1">Study groups</li>
+                    <li data-i18n="index.wg.literacy.2">Certifications</li>
+                    <li data-i18n="index.wg.literacy.3">
+                      Industry knowledge sharing
+                    </li>
+                    <li data-i18n="index.wg.literacy.4">
+                      Expert advice on AI policy &amp; products
+                    </li>
                   </ul>
                 </div>
 
@@ -432,14 +550,19 @@
                       ></i>
                     </span>
                   </div>
-                  <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 mb-4"
+                    data-i18n="index.wg.gov.title"
+                  >
                     Governance &amp; Regulation
                   </h4>
                   <ul class="space-y-2 text-gray-700 leading-relaxed">
-                    <li>Policy research</li>
-                    <li>Stakeholder roundtables</li>
-                    <li>Frameworks development</li>
-                    <li>Contributions to enforced public policy</li>
+                    <li data-i18n="index.wg.gov.1">Policy research</li>
+                    <li data-i18n="index.wg.gov.2">Stakeholder roundtables</li>
+                    <li data-i18n="index.wg.gov.3">Frameworks development</li>
+                    <li data-i18n="index.wg.gov.4">
+                      Contributions to enforced public policy
+                    </li>
                   </ul>
                 </div>
 
@@ -455,14 +578,23 @@
                       ></i>
                     </span>
                   </div>
-                  <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 mb-4"
+                    data-i18n="index.wg.tech.title"
+                  >
                     Technology &amp; Security
                   </h4>
                   <ul class="space-y-2 text-gray-700 leading-relaxed">
-                    <li>Building AI safety tools &amp; solutions</li>
-                    <li>Mentoring builders</li>
-                    <li>Technical AI safety research</li>
-                    <li>Advancing technical standards</li>
+                    <li data-i18n="index.wg.tech.1">
+                      Building AI safety tools &amp; solutions
+                    </li>
+                    <li data-i18n="index.wg.tech.2">Mentoring builders</li>
+                    <li data-i18n="index.wg.tech.3">
+                      Technical AI safety research
+                    </li>
+                    <li data-i18n="index.wg.tech.4">
+                      Advancing technical standards
+                    </li>
                   </ul>
                 </div>
 
@@ -475,14 +607,25 @@
                       <i class="fa-solid fa-users" style="color: #9e2e2e;"></i>
                     </div>
                   </div>
-                  <h4 class="text-lg font-semibold text-gray-900 mb-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 mb-4"
+                    data-i18n="index.wg.conv.title"
+                  >
                     Convening &amp; Coordination
                   </h4>
                   <ul class="space-y-2 text-gray-700 leading-relaxed">
-                    <li>Connect local talent to global opportunities</li>
-                    <li>Communications &amp; outreach</li>
-                    <li>Events &amp; partnerships</li>
-                    <li>Civil society &amp; advocacy</li>
+                    <li data-i18n="index.wg.conv.1">
+                      Connect local talent to global opportunities
+                    </li>
+                    <li data-i18n="index.wg.conv.2">
+                      Communications &amp; outreach
+                    </li>
+                    <li data-i18n="index.wg.conv.3">
+                      Events &amp; partnerships
+                    </li>
+                    <li data-i18n="index.wg.conv.4">
+                      Civil society &amp; advocacy
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -496,6 +639,7 @@
         <div class="max-w-6xl mx-auto px-6">
           <h2
             class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12"
+            data-i18n="index.partners.title"
           >
             Our Partners
           </h2>
@@ -534,6 +678,7 @@
         <div class="max-w-6xl mx-auto px-6">
           <h2
             class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12"
+            data-i18n="index.faq.title"
           >
             FAQ
           </h2>
@@ -548,11 +693,18 @@
                 @click="open = !open"
                 class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-gray-700 hover:bg-gray-100 rounded-lg animate-on-scroll"
               >
-                <span>What is AI safety and why is it important?</span>
+                <span data-i18n="index.faq.q1">
+                  What is AI safety and why is it important?
+                </span>
                 <span x-show="!open">+</span>
                 <span x-show="open">−</span>
               </button>
-              <div x-show="open" x-transition class="px-4 pb-4 text-gray-600">
+              <div
+                x-show="open"
+                x-transition
+                class="px-4 pb-4 text-gray-600"
+                data-i18n="index.faq.a1"
+              >
                 AI safety focuses on ensuring that artificial intelligence
                 systems are beneficial, controllable, and aligned with human
                 values as they become increasingly powerful.
@@ -568,11 +720,18 @@
                 @click="open = !open"
                 class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-gray-700 hover:bg-gray-100 rounded-lg animate-on-scroll"
               >
-                <span>How can I get involved in the community?</span>
+                <span data-i18n="index.faq.q2">
+                  How can I get involved in the community?
+                </span>
                 <span x-show="!open">+</span>
                 <span x-show="open">−</span>
               </button>
-              <div x-show="open" x-transition class="px-4 pb-4 text-gray-600">
+              <div
+                x-show="open"
+                x-transition
+                class="px-4 pb-4 text-gray-600"
+                data-i18n="index.faq.a2"
+              >
                 You can join our local meetups, contribute to projects, or
                 participate in our discussions and resources.
               </div>
@@ -587,11 +746,18 @@
                 @click="open = !open"
                 class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-gray-700 hover:bg-gray-100 rounded-lg animate-on-scroll animate-on-scroll"
               >
-                <span>What types of projects does the community support?</span>
+                <span data-i18n="index.faq.q3">
+                  What types of projects does the community support?
+                </span>
                 <span x-show="!open">+</span>
                 <span x-show="open">−</span>
               </button>
-              <div x-show="open" x-transition class="px-4 pb-4 text-gray-600">
+              <div
+                x-show="open"
+                x-transition
+                class="px-4 pb-4 text-gray-600"
+                data-i18n="index.faq.a3"
+              >
                 We support research projects, educational initiatives, safety
                 evaluation tools, and collaborative efforts to advance AI safety
                 understanding and implementation.
@@ -606,6 +772,7 @@
         <div class="max-w-6xl mx-auto px-6">
           <h2
             class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12"
+            data-i18n="index.creds.title"
           >
             Delivered by Certified Experts
           </h2>
@@ -618,7 +785,10 @@
                 <span class="text-4xl mb-4">
                   🏅
                 </span>
-                <h4 class="text-lg font-semibold text-gray-900 text-center">
+                <h4
+                  class="text-lg font-semibold text-gray-900 text-center"
+                  data-i18n="index.creds.1"
+                >
                   ISO 42001 Lead Auditor
                 </h4>
               </div>
@@ -630,7 +800,10 @@
                 <span class="text-4xl mb-4">
                   🏅
                 </span>
-                <h4 class="text-lg font-semibold text-gray-900 text-center">
+                <h4
+                  class="text-lg font-semibold text-gray-900 text-center"
+                  data-i18n="index.creds.2"
+                >
                   AI Governance Professional (AIGP) Certified
                 </h4>
               </div>
@@ -642,7 +815,10 @@
                 <span class="text-4xl mb-4">
                   🏅
                 </span>
-                <h4 class="text-lg font-semibold text-gray-900 text-center">
+                <h4
+                  class="text-lg font-semibold text-gray-900 text-center"
+                  data-i18n="index.creds.3"
+                >
                   Aligned with UAE AI Strategy 2031
                 </h4>
               </div>
@@ -654,7 +830,10 @@
                 <span class="text-4xl mb-4">
                   🏅
                 </span>
-                <h4 class="text-lg font-semibold text-gray-900 text-center">
+                <h4
+                  class="text-lg font-semibold text-gray-900 text-center"
+                  data-i18n="index.creds.4"
+                >
                   BlueDot Impact Partner
                 </h4>
               </div>

@@ -23,14 +23,23 @@
     <!-- ✅ Main css -->
     <link href="/css/main.css" rel="stylesheet" />
     <!-- Add translation -->
+    <script src="translations/ar/ar.js" defer></script>
+    <script src="translations/en/en.js" defer></script>
     <script src="js/translation.js" defer></script>
   </head>
   <body class="bg-gray-50 text-gray-800">
   <!-- Header  -->
     <div id="header"></div>
-    <main>
-      <!-- Hero Section -->
-      <section
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+      <!-- Hero -->
+      <div class="text-center mb-6">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6"
+          data-i18n="about.hero.h1">About us
+        </h1>
+      </div>
+
+      <!-- <section
         class="relative h-[40vh] flex items-end justify-center text-center p-8 text-white"
         style="
           background-image: url('images/about-bg.jpg');
@@ -40,22 +49,22 @@
       >
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="relative z-10">
-          <h1 class="text-4xl sm:text-5xl font-bold mb-4">About us</h1>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-4" data-i18n="about.hero.h1">About us</h1>
         </div>
-      </section>
+      </section> -->
 
       <!-- Mission Section -->
       <section class="pt-8 pb-8 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-            <p class="text-gray-600 mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="about.mission.title">Our Mission</h2>
+            <p class="text-gray-600 mb-6" data-i18n="about.mission.p1">
               AI Safety UAE is a multidisciplinary initiative advancing safe,
               secure, and beneficial AI development in the region. Our mission
               is to catalyse collaboration, literacy, and governance frameworks
               that align advanced AI systems with human and national interests.
             </p>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6" data-i18n="about.mission.p2">
               Our north star is solving UAE-specific AI Safety issues in line
               with the UAE's plans to be the first AI nation by 2027.
             </p>
@@ -67,19 +76,19 @@
       <section class="pt-4 pb-8 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Vision Forward</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="about.vision.title">Vision Forward</h2>
             <p class="text-gray-600 mb-6">
               <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-                <li>
+                <li data-i18n="about.vision.li1">
                   Expand across the GCC with partnerships in academia, industry, government, and media.
                 </li>
 
-                <li>
+                <li data-i18n="about.vision.li2">
                   Launch an <span class="font-semibold text-gray-900">AI Safety Certification</span> and local
                   <span class="font-semibold text-gray-900">fellowship program</span> for applied research.
                 </li>
 
-                <li>
+                <li data-i18n="about.vision.li3">
                   Serve as an <span class="font-semibold text-gray-900">advisory bridge</span> between UAE institutions
                   and global AI governance initiatives, aligning with GAFAI’s mission to promote research, education,
                   and development in AI, ensuring its ethical and beneficial application for society.
@@ -94,35 +103,166 @@
       <section class="pt-4 pb-8 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="about.why.title">
               Why AI Safety UAE Matters?
             </h2>
             <p class="text-gray-600 mb-6">
               <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
                 <li>
-                  <span class="font-semibold text-gray-900">Strategic Priority:</span>
-                  As the UAE accelerates its path to global AI leadership, safety and reliability are now core to economic and national security strategies.
+                  <span class="font-semibold text-gray-900" data-i18n="about.why.li1.label">Strategic Priority:</span>
+                  <span data-i18n="about.why.li1.text">As the UAE accelerates its path to global AI leadership, safety and reliability are now core to economic and national security strategies.</span>
                 </li>
 
                 <li>
-                  <span class="font-semibold text-gray-900">Bridge Global and Local:</span>
-                  We translate global AI safety advances into the UAE’s institutional, regulatory, and cultural context.
+                  <span class="font-semibold text-gray-900" data-i18n="about.why.li2.label">Bridge Global and Local:</span>
+                  <span data-i18n="about.why.li2.text">We translate global AI safety advances into the UAE’s institutional, regulatory, and cultural context.</span>
                 </li>
 
                 <li>
-                  <span class="font-semibold text-gray-900">Ecosystem Builder:</span>
-                  We convene technologists, policymakers, research leaders, end users, and consumer protection groups to co-create practical safety solutions.
+                  <span class="font-semibold text-gray-900" data-i18n="about.why.li3.label">Ecosystem Builder:</span>
+                  <span data-i18n="about.why.li3.text">We convene technologists, policymakers, research leaders, end users, and consumer protection groups to co-create practical safety solutions.</span>
                 </li>
 
                 <li>
-                  <span class="font-semibold text-gray-900">AI Literacy:</span>
-                  We elevate understanding of AI risks and mitigation among professionals, academia, and the public.
+                  <span class="font-semibold text-gray-900" data-i18n="about.why.li4.label">AI Literacy:</span>
+                  <span data-i18n="about.why.li4.text">We elevate understanding of AI risks and mitigation among professionals, academia, and the public.</span>
                 </li>
               </ul>
             </p>
           </div>
         </div>
       </section>
+
+      <!-- Leadership Team Section -->
+      <section class="py-16 bg-gray-50 px-8 sm:px-16">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+        <div class="wrapper">
+          <div class="left-title" data-i18n="team.left.title">
+            Leadership
+          </div>
+
+          <div class="right">
+            <!-- Co-founders -->
+            <div class="section">
+              <h2 data-i18n="team.cofounders.h2">Co-founders</h2>
+              <p data-i18n="team.cofounders.p">The co-founders are:</p>
+              <div class="members">
+                <div class="member">
+                  <img src="images/Wes.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.wes.name">Wes Ezzeddine</div>
+                    <div class="member-desc" data-i18n="team.wes.desc">
+                      AI safety specialist and fintech leader with 15+ years in
+                      tech, focused on AI alignment, governance, and resilient systems.
+                    </div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Nai.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.nai.name">Naiyarah Hussain</div>
+                    <div class="member-desc" data-i18n="team.nai.desc">
+                      Senior engineer in AI safety and reliability with
+                      leadership roles at IBM, Lightning AI, and SurrealDB, and
+                      contributor to global multilingual AI datasets.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Advisors -->
+            <div class="section">
+              <h2 data-i18n="team.advisors.h2">Advisors</h2>
+              <p data-i18n="team.advisors.p">The Advisors are:</p>
+              <div class="members">
+                <div class="member">
+                  <img src="images/Grace.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.grace.name">Grace S. Thomson</div>
+                    <div class="member-desc" data-i18n="team.grace.desc">
+                      Advisor in AI Policy and Strategy with experience across
+                      the Middle East, Latin America, Europe, and the USA.
+                    </div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Yasser.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.yasser.name">Mohamed Yasser</div>
+                    <div class="member-desc" data-i18n="team.yasser.desc">
+                      A Software Solutions Architect with a distinguished career
+                      spanning over 19 years, renowned for designing and
+                      developing advanced software solutions for prestigious
+                      government organizations.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Groups -->
+            <div class="section">
+              <h2 data-i18n="team.wg.h2">Working Group Leaders</h2>
+              <p data-i18n="team.wg.p">The working groups are led by the following:</p>
+              <div class="members">
+                <div class="member">
+                  <img src="images/Wes.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.wg.literacy">Literacy</div>
+                    <div class="member-desc" data-i18n="team.wes.name">Wes Ezzeddine</div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Nai.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.wg.convening">Convening & Coordination</div>
+                    <div class="member-desc" data-i18n="team.nai.name">Naiyarah Hussain</div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Nikitha.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.wg.governance">Governance & Regulation</div>
+                    <div class="member-desc" data-i18n="team.nikitha.name">Nikitha Ann Mathew</div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Omar.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.wg.tech">Technology & Security</div>
+                    <div class="member-desc" data-i18n="team.omar.name">Omar Abdullah</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Volunteers -->
+            <div class="section">
+              <h2 data-i18n="team.volunteers.h2">Volunteers</h2>
+              <p data-i18n="team.volunteers.p">The Volunteers are:</p>
+              <div class="members">
+                <div class="member">
+                  <img src="images/Fatma.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.fatma.name">Fatma Eagl</div>
+                  </div>
+                </div>
+                <div class="member">
+                  <img src="images/Yusra.png" />
+                  <div>
+                    <div class="member-name" data-i18n="team.yusra.name">Yusra Khan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <!-- Footer -->
     <div id="footer"></div>

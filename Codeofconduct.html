@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Safety Services UAE | Training, Audits & Governance</title>
+    <title>AI Safety Services UAE | Code of Conduct</title>
     <meta
       name="description"
       content="Enterprise AI safety services in the UAE: 
@@ -20,249 +20,432 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- ✅ Main css -->
     <link href="/css/main.css" rel="stylesheet" />
-    <!-- Add translation -->
+    <script src="translations/ar/ar.js" defer></script>
+    <script src="translations/en/en.js" defer></script>
     <script src="js/translation.js" defer></script>
   </head>
   <body class="bg-gray-50 text-gray-800">
-    <!-- Header  -->
     <div id="header"></div>
-    <main>
-      <!-- Hero Section -->
-      <section
-        class="relative h-[40vh] flex items-end justify-center text-center p-8 text-white"
-        style="
-          background-image: url('images/about-bg.jpg');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div class="absolute inset-0 bg-black/40"></div>
-        <div class="relative z-10">
-          <h1 class="text-4xl sm:text-5xl font-bold mb-4">Code Of Conduct</h1>
-        </div>
-      </section>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+      <!-- Hero -->
+      <div class="text-center mb-6">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 mt-4 mb-6"
+          data-i18n="coc.hero.h1"
+        >
+          Code of Conduct
+        </h1>
+      </div>
 
-      <!-- Vision and the COC Section -->
-      <section class="pt-16 pb-8 px-8 sm:px-16">
-        <div class="max-w-4xl mx-auto">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
-              Code of Conduct
-            </h2>
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+      <!-- Welcome & Vision -->
+      <section class="pt-12 pb-6 px-8 sm:px-16">
+        <div class="max-w-4xl mx-auto space-y-4">
+          <div class="bg-white p-8 rounded-lg shadow-lg" >
+            <!-- <p class="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-2" data-i18n="coc.label.community">Community</p> -->
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-3"
+              data-i18n="coc.welcome"
+            >
               Welcome to the AI Safety UAE Community!
             </h2>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 leading-relaxed" data-i18n="coc.welcome.p">
               We're thrilled to have you! This community unites professionals,
               researchers, academics, technologists, policymakers, and curious
               minds in the UAE who are passionate about advancing AI safety.
             </p>
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
-            <p class="text-gray-600 mb-6">
+          </div>
+          <br>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-teal-500"
+          >
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-3"
+              data-i18n="coc.vision.title"
+            >
+              Our Vision
+            </h2>
+            <p class="text-gray-600 leading-relaxed" data-i18n="coc.vision.p">
               AI Safety UAE exists to foster collaboration, dialogue, and
               innovation around safe and trustworthy AI. We are committed to
               creating an inclusive, respectful, and harassment-free environment
               for everyone, regardless of gender, identity, ethnicity, faith,
-              age, ability, or background. AI Safety UAE is committed to
-              providing a harassment-free experience for everyone. We do not
-              tolerate harassment in any form.
+              age, ability, or background.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Scope Section -->
-      <section class="pt-8 pb-16 px-8 sm:px-16">
+      <!-- Scope -->
+      <section class="py-6 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-4"
+              data-i18n="coc.scope.title"
+            >
               Scope – Where and Who It Applies
             </h2>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4" data-i18n="coc.scope.p">
               This Code of Conduct applies to all community spaces and
               activities, including but not limited to:
             </p>
-            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
-              <li>
-                Online platforms (Slack, LinkedIn, forums, social media groups)
+            <ul class="space-y-3 mb-5">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.scope.li1">
+                  Online platforms (Slack, LinkedIn, forums, social media
+                  groups)
+                </span>
               </li>
-              <li>
-                In-person events (study groups, meetups, workshops, hackathons,
-                conferences)
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.scope.li2">
+                  In-person events (study groups, meetups, workshops,
+                  hackathons, conferences)
+                </span>
               </li>
-              <li>
-                Virtual sessions (webinars, panel discussions, online meetups)
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.scope.li3">
+                  Virtual sessions (webinars, panel discussions, online meetups)
+                </span>
               </li>
             </ul>
-            <p class="text-gray-600">
-              It is binding on all
+            <p class="text-gray-600 bg-gray-50 rounded-lg p-4 text-sm">
+              <span data-i18n="coc.scope.binding.pre">
+                It is binding on all
+              </span>
               <strong>
-                attendees, members, organisers, partners, and volunteers.
+                <span data-i18n="coc.scope.binding.who">
+                  attendees, members, organisers, partners, and volunteers.
+                </span>
               </strong>
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Standards Section -->
-      <section class="pt-8 pb-16 px-8 sm:px-16">
+      <!-- Standards -->
+      <section class="py-6 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-4"
+              data-i18n="coc.standards.title"
+            >
               Our Standards: Expected Behaviour
             </h2>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4" data-i18n="coc.standards.intro">
               Members are encouraged to:
             </p>
-            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li>
-                Treat all participants with respect, courtesy, and
-                professionalism.
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.standards.li1">
+                  Treat all participants with respect, courtesy, and
+                  professionalism.
+                </span>
               </li>
-              <li>
-                Engage in discussions that are constructive, evidence-based, and
-                inclusive.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.standards.li2">
+                  Engage in discussions that are constructive, evidence-based,
+                  and inclusive.
+                </span>
               </li>
-              <li>Respect differing viewpoints, experiences, and expertise.</li>
-              <li>
-                Give credit where it is due and respect intellectual
-                contributions.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.standards.li3">
+                  Respect differing viewpoints, experiences, and expertise.
+                </span>
               </li>
-              <li>
-                Follow event or platform-specific rules set by organisers or
-                moderators.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.standards.li4">
+                  Give credit where it is due and respect intellectual
+                  contributions.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.standards.li5">
+                  Follow event or platform-specific rules set by organisers or
+                  moderators.
+                </span>
               </li>
             </ul>
-            <p class="text-gray-600 mb-4">
-              <strong>Examples of expected behaviour:</strong>
+            <p
+              class="text-sm font-semibold text-gray-700 mb-3"
+              data-i18n="coc.standards.examples.label"
+            >
+              Examples of expected behaviour:
             </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>
-                Listening actively to others during discussions without
-                interruption.
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.standards.ex1"
+                >
+                  Listening actively to others during discussions without
+                  interruption.
+                </span>
               </li>
-              <li>
-                Offering constructive feedback ("I see your point, but what
-                about X…") instead of dismissive remarks.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.standards.ex2"
+                >
+                  Offering constructive feedback instead of dismissive remarks.
+                </span>
               </li>
-              <li>
-                Helping new members feel welcome by answering their questions.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.standards.ex3"
+                >
+                  Helping new members feel welcome by answering their questions.
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Red Flags Section -->
-
-      <section class="pt-8 pb-16 px-8 sm:px-16">
+      <!-- Red Flags -->
+      <section class="py-6 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-red-400"
+          >
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-4"
+              data-i18n="coc.redflags.title"
+            >
               Red Flags: Unacceptable Behavior
             </h2>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4" data-i18n="coc.redflags.intro">
               The following will not be tolerated:
             </p>
-            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li>
-                Harassment or discrimination in any form (verbal, physical,
-                written, or online).
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li1">
+                  Harassment or discrimination in any form (verbal, physical,
+                  written, or online).
+                </span>
               </li>
-              <li>
-                Intimidation, stalking, or unwelcome attention, including
-                persistent messaging.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li2">
+                  Intimidation, stalking, or unwelcome attention, including
+                  persistent messaging.
+                </span>
               </li>
-              <li>
-                Hate speech, offensive jokes, or derogatory comments relating to
-                gender, identity, race, religion, or other protected
-                characteristics.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li3">
+                  Hate speech, offensive jokes, or derogatory comments relating
+                  to gender, identity, race, religion, or other protected
+                  characteristics.
+                </span>
               </li>
-              <li>Disruption of talks, events, or online discussions.</li>
-              <li>
-                Sharing others' personal information without consent (doxxing).
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li4">
+                  Disruption of talks, events, or online discussions.
+                </span>
               </li>
-              <li>
-                Promotional spam or solicitation unrelated to AI Safety UAE.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li5">
+                  Sharing others' personal information without consent
+                  (doxxing).
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.redflags.li6">
+                  Promotional spam or solicitation unrelated to AI Safety UAE.
+                </span>
               </li>
             </ul>
-            <p class="text-gray-600 mb-4">
-              <strong>Examples of unacceptable behavior:</strong>
+            <p
+              class="text-sm font-semibold text-gray-700 mb-3"
+              data-i18n="coc.redflags.examples.label"
+            >
+              Examples of unacceptable behavior:
             </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>
-                Making jokes that stereotype nationalities, religions, or
-                genders.
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex1"
+                >
+                  Making jokes that stereotype nationalities, religions, or
+                  genders.
+                </span>
               </li>
-              <li>
-                Repeatedly sending direct messages after someone has asked you
-                to stop.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex2"
+                >
+                  Repeatedly sending direct messages after someone has asked you
+                  to stop.
+                </span>
               </li>
-              <li>
-                Talking over speakers or deliberately derailing Q&A sessions.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex3"
+                >
+                  Talking over speakers or deliberately derailing Q&A sessions.
+                </span>
               </li>
-              <li>
-                Posting irrelevant self-promotion or advertisements in community
-                channels.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex4"
+                >
+                  Posting irrelevant self-promotion or advertisements in
+                  community channels.
+                </span>
               </li>
-              <li>
-                Sharing someone's email or phone number publicly without their
-                permission.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex5"
+                >
+                  Sharing someone's email or phone number publicly without their
+                  permission.
+                </span>
               </li>
-              <li>
-                Sending texts or starting conversations that are unrelated to
-                the topic of the event/discussion.
-              </li>
-              <li>
-                Asking intrusive personal questions (e.g., about someone's
-                private life, finances, or relationships).
-              </li>
-              <li>
-                Using a company name or logo as your Slack display name or
-                profile picture instead of your personal identity which can
-                cause confusion about who is speaking.
-              </li>
-              <li>
-                Members are encouraged to represent themselves personally rather
-                than organizationally.
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span
+                  class="text-gray-500 text-sm"
+                  data-i18n="coc.redflags.ex6"
+                >
+                  Using a company name or logo as your Slack display name
+                  instead of your personal identity.
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- When In Doubt Section -->
-
-      <section class="pt-8 pb-16 px-8 sm:px-16">
+      <!-- Grey Areas -->
+      <section class="py-6 px-8 sm:px-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-4"
+              data-i18n="coc.greyareas.title"
+            >
               Grey Areas – When in Doubt
             </h2>
-            <p class="text-gray-600 mb-4">
-              Sometimes, it may not be obvious whether a behaviour is
+            <p class="text-gray-600 mb-4" data-i18n="coc.greyareas.intro">
+              Sometimes it may not be obvious whether a behaviour is
               appropriate. If you are unsure, ask yourself:
             </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2">
-              <li>
-                Would I say or do this in front of a colleague, teacher, or
-                supervisor?
+            <ul class="space-y-3 mb-5">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.greyareas.q1">
+                  Would I say or do this in front of a colleague, teacher, or
+                  supervisor?
+                </span>
               </li>
-              <li>
-                Does this comment or message contribute meaningfully to the
-                discussion?
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.greyareas.q2">
+                  Does this comment or message contribute meaningfully to the
+                  discussion?
+                </span>
               </li>
-              <li>
-                Am I respecting the other person's boundaries and privacy?
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.greyareas.q3">
+                  Am I respecting the other person's boundaries and privacy?
+                </span>
               </li>
-              <li>
-                Would I feel comfortable if this interaction was shared
-                publicly?
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.greyareas.q4">
+                  Would I feel comfortable if this interaction was shared
+                  publicly?
+                </span>
               </li>
             </ul>
-            <p class="text-gray-600 mt-4">
+            <p
+              class="text-gray-600 bg-gray-50 rounded-lg p-4 text-sm"
+              data-i18n="coc.greyareas.note"
+            >
               If the answer is no or you're uncertain, it's best to reconsider
               before acting.
             </p>
@@ -270,57 +453,106 @@
         </div>
       </section>
 
-      <!-- Conflicts of Interest & Transparency Section -->
-
-      <section class="pt-8 pb-16 px-8 sm:px-16">
+      <!-- Conflicts, Enforcement, Commitment, Acknowledgement -->
+      <section class="py-6 px-8 sm:px-16 pb-16">
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            <h2
+              class="text-2xl font-bold text-gray-900 mb-4"
+              data-i18n="coc.conflicts.title"
+            >
               Conflicts of Interest & Transparency
             </h2>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-8" data-i18n="coc.conflicts.p">
               Reports will be handled impartially. If a complaint involves an
               organizer, moderator, or member of the enforcement team, that
               person will be excluded from reviewing or deciding the matter.
               Decisions will be documented and, where appropriate, shared with
               the reporting party.
             </p>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
+
+            <h3
+              class="text-lg font-bold text-gray-900 mb-3"
+              data-i18n="coc.enforcement.title"
+            >
               Enforcement
             </h3>
-            <p class="text-gray-600 mb-4">
-              <strong>Reporting:</strong>
-              If you experience or witness behavior that violates this Code,
-              please report it to the organizing team at
-              <a href="mailto:conduct@aisafety.ae">conduct@aisafety.ae</a>
-              . Reports will be handled with confidentiality and discretion.
+            <p class="text-gray-600 mb-2">
+              <strong data-i18n="coc.enforcement.reporting.label">
+                Reporting:
+              </strong>
+              <span data-i18n="coc.enforcement.reporting.p">
+                If you experience or witness behavior that violates this Code,
+                please report it to the organizing team at
+              </span>
+              <a
+                href="mailto:conduct@aisafety.ae"
+                class="text-teal-600 underline ml-1"
+              >
+                conduct@aisafety.ae
+              </a>
+              .
+              <span data-i18n="coc.enforcement.reporting.note">
+                Reports will be handled with confidentiality and discretion.
+              </span>
             </p>
-            <p class="text-gray-600 mb-4">
-              <strong>Consequences:</strong>
-              Organizers may take appropriate action, including:
+            <p class="text-gray-600 mt-4 mb-3">
+              <strong data-i18n="coc.enforcement.consequences.label">
+                Consequences:
+              </strong>
+              <span data-i18n="coc.enforcement.consequences.p">
+                Organizers may take appropriate action, including:
+              </span>
             </p>
-            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li>Verbal or written warning</li>
-              <li>
-                Temporary or permanent removal from community spaces and
-                anonymized public notice
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.enforcement.c1">
+                  Verbal or written warning
+                </span>
               </li>
-              <li>Referral to relevant authorities if necessary</li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.enforcement.c2">
+                  Temporary or permanent removal from community spaces and
+                  anonymized public notice
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="mt-2 w-2 h-2 rounded-full bg-maroon flex-shrink-0"
+                ></span>
+                <span class="text-gray-600" data-i18n="coc.enforcement.c3">
+                  Referral to relevant authorities if necessary
+                </span>
+              </li>
             </ul>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
+
+            <h3
+              class="text-lg font-bold text-gray-900 mb-3"
+              data-i18n="coc.commitment.title"
+            >
               Commitment
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-8" data-i18n="coc.commitment.p">
               By participating in AI Safety UAE, you agree to uphold this Code
               of Conduct and contribute to a culture of trust, respect, and
               collaboration. Together, we can ensure this community remains a
               safe, inclusive, and impactful space for advancing AI safety in
               the UAE.
             </p>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
+
+            <h3
+              class="text-lg font-bold text-gray-900 mb-3"
+              data-i18n="coc.acknowledgement.title"
+            >
               Code Acknowledgement
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600" data-i18n="coc.acknowledgement.p">
               By joining AI Safety UAE spaces or participating in events,
               members are understood to have read and agreed to this Code of
               Conduct.
@@ -329,7 +561,6 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
     <div id="footer"></div>
     <script src="js/load-component.js"></script>
     <script src="js/nav-highlight.js"></script>
