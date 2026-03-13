@@ -206,12 +206,15 @@ const LANG_EN = {
   "services.assess.desc":  "Whether you're starting with awareness training or need a full model audit and governance framework, we'll scope the right engagement for your context.",
   "services.assess.cta":   "Request a Risk Assessment",
 
-  // ── EVENTS PAGE ──────────────────────────────────────────────
-  "events.h1":    "Events & Activities",
-  "events.desc":  "Stay connected with the community through our various events",
-  "events.join":  "Join our AI Safety UAE",
-  "events.card1": "AI Safety UAE Meetup",
-  "events.card2": "The Future of AI | AI Safety",
+ // ── EVENTS PAGE ──────────────────────────────────────────────
+  "events.h1":              "Events & Activities",
+  "events.desc":            "Stay connected with the community through our various events",
+  "events.past.title":      "Past Events",
+  "events.past.desc":       "A look back at our community gatherings across the UAE",
+  "events.upcoming.title":  "Upcoming Events",
+  "events.upcoming.desc":   "Browse and register for our next community sessions",
+  "events.cta.desc":        "Never miss an event — subscribe to get notified about every upcoming session.",
+  "events.cta.btn":         "Subscribe to All Events",
 
   // ── CONTACT PAGE ─────────────────────────────────────────────
   "contact.h1":               "Get in Touch",
