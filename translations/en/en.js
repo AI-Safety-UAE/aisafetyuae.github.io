@@ -131,6 +131,9 @@ const LANG_EN = {
   "services.hero.h1":   "Building Trustworthy AI for the UAE",
   "services.hero.desc": "From foundational training to technical audits and governance frameworks — delivered by certified experts aligned with UAE AI Strategy 2031.",
 
+  "services.free.title":  "All courses are currently free",
+  "services.free.desc":   "As part of our community mission, all training programmes are offered at no cost while we grow AI safety literacy across the UAE.",
+
   "services.s1.badge1":   "2 Hours",
   "services.s1.badge2":   "Up to 50 Participants",
   "services.s1.badge3":   "In-Person or Virtual",
