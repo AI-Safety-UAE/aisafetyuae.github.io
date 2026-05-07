@@ -253,9 +253,11 @@ body.visible {
   text-align: right;
 }
 
-li span {
-  margin-right: 5px;
-  margin-left: 10px;
+#governance li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 5px;
 }
 
 #successMessage {
