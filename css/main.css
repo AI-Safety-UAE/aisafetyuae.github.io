@@ -232,6 +232,11 @@ html[lang="ar"] .right {
   background-color: #9e2e2e;
 }
 
+.border-maroon {
+  border-left: 2px solid #9e2e2e;
+  background-color: #fce9e983;
+}
+
 /* Hide content until translation is ready */
 body {
   visibility: hidden;
@@ -241,10 +246,26 @@ body.visible {
   visibility: visible;
 }
 
-
 [dir="rtl"] .rounded-2xl h4,
 [dir="rtl"] .rounded-2xl p,
 [dir="rtl"] .rounded-2xl li,
 [dir="rtl"] .rounded-2xl a {
   text-align: right;
 }
+
+li span {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+#successMessage {
+  color: #48bb78;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #9b2525;
+  margin-top: 20px;
+}
+
+
