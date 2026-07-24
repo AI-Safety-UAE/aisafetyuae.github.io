@@ -22,6 +22,8 @@ const LANG_AR = {
   'footer.resources': 'الموارد',
   'footer.events': 'الفعاليات',
   'footer.social': 'وسائل التواصل',
+  'footer.linkedIn': 'لينكد إن',
+  'footer.instagram': 'إنستغرام',
   'footer.copyright': '© 2026 AI Safety UAE. جميع الحقوق محفوظة',
 
   // ── INDEX PAGE ───────────────────────────────────────────────
@@ -103,6 +105,13 @@ const LANG_AR = {
   'index.wg.conv.4': 'المجتمع المدني والمناصرة',
 
   'index.partners.title': 'شركاؤنا',
+  'index.partners.pt1': 'بلو دوت',
+  'index.partners.pt2': 'كودر إتش كيو',
+  'index.partners.pt3': 'فولكان',
+  'index.partners.pt4': 'سيف تشيك',
+  'index.partners.pt5': 'ساميت ٣٣٣',
+  'index.partners.pt6': 'إيرث ٠٥',
+  'index.partners.pt7': 'إم بي زد يو إيه آي إيجنتك إيه آي',
 
   'index.faq.title': 'الأسئلة الشائعة',
   'index.faq.q1': 'ما هي سلامة الذكاء الاصطناعي ولماذا هي مهمة؟',

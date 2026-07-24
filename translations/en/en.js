@@ -22,6 +22,8 @@ const LANG_EN = {
   'footer.resources': 'Resources',
   'footer.events': 'Events',
   'footer.social': 'Social',
+  'footer.linkedIn': 'LinkedIn',
+  'footer.instagram': 'Instagram',
   'footer.copyright': '© 2026 AI Safety UAE. All rights reserved.',
 
   // ── INDEX PAGE ───────────────────────────────────────────────
@@ -103,6 +105,13 @@ const LANG_EN = {
   'index.wg.conv.4': 'Civil society & advocacy',
 
   'index.partners.title': 'Our Partners',
+  'index.partners.pt1': 'BlueDot',
+  'index.partners.pt2': 'CoderHQ',
+  'index.partners.pt3': 'Vulcan',
+  'index.partners.pt4': 'Saif Check',
+  'index.partners.pt5': 'Summit333',
+  'index.partners.pt6': 'Earth 05',
+  'index.partners.pt7': 'MBZUAI Agentic AI',
 
   'index.faq.title': 'FAQ',
   'index.faq.q1': 'What is AI safety and why is it important?',
